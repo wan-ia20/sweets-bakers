@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produrs- Sweets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=
+    "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="sweets.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8d7da; position: sticky; top: 0; z-index: 1000;">
+    <div class="container-fluid d-flex justify-content-center">
+       <img src="logo.png" class="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sweets.html">Bakery</a></li>
+              <li><a class="dropdown-item" href="cake.html">Cakes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gift Hampers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="hamper1.html">Cakes</a></li>
+              <li><a class="dropdown-item" href="hamper2.html">Sweets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="about.html">About Us</a>
+          </li>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link active" href="contact.html">Contact Us</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="carousel">
+    <div class="carousel-container">
+        <img src="https://i.pinimg.com/474x/99/85/db/9985dba53ccb489f139bf5e7f54c16a6.jpg" alt="">
+    </div>
+    <div class="carousel-container">
+        <img src="https://i.pinimg.com/474x/f3/a0/dd/f3a0ddb116454ee080b9dcf7cff40ab9.jpg" alt="">
+    </div>
+    <div class="carousel-container">
+        <img src="https://i.pinimg.com/474x/96/ad/00/96ad003b5e4fcaf32ed754ac1e25b967.jpg" alt="">
+    </div>
+</div>
+
+    <div class="container mt-4">
+      <div class="scrollable-list">
+          <div class="sweet-item" data-popup="popup1">
+              <img src="https://i.pinimg.com/736x/0b/19/36/0b193644b867d2d59ba5ca5e1f7734d5.jpg" alt="">
+              <div>
+                  <h5>KitKat</h5>
+                  <p>Crispy wafers covered in smooth milk chocolate, Kit Kat is the perfect snack for a satisfying break!</p>
+              </div>
+          </div>
+          
+          <div class="sweet-item" data-popup="popup2">
+              <img src="https://i.pinimg.com/474x/7c/6a/66/7c6a663cccdbac55536d0c04ac9c7ad9.jpg" alt="">
+              <div>
+                  <h5>Mars</h5>
+                  <p>A rich, chewy caramel and nougat bar. Take a bite, power up, and conquer your world</p>
+              </div>
+          </div>
+  
+          <div class="sweet-item" data-popup="popup3">
+              <img src="https://i.pinimg.com/474x/a9/41/08/a94108adb5069087c6c258a0b93ebb24.jpg" alt="">
+              <div>
+                  <h5>Snickers</h5>
+                  <p>Packed with crunchy peanuts, chewy caramel, and smooth nougat, all coated in rich milk chocolate.</p>
+              </div>
+          </div>
+  
+          <div class="sweet-item" data-popup="popup4">
+              <img src="https://i.pinimg.com/474x/1d/dd/4a/1ddd4a200c22ed4d61f5fafe87eff669.jpg" alt="">
+              <div>
+                  <h5>Aero</h5>
+                  <p>Experience the light, bubbly delight of Aero! Its smooth chocolate melts effortlessly!</p>
+              </div>
+          </div>
+  
+          <div class="sweet-item" data-popup="popup5">
+              <img src="https://i.pinimg.com/474x/ba/8e/12/ba8e1222ebb4dd94fb2f1e44dcb22e72.jpg" alt="">
+              <div>
+                  <h5>Kinder Bueno</h5>
+                  <p>Treat yourself to the light and luxurious taste of Kinder Bueno—because you deserve a little indulgence.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup6">
+              <img src="https://i.pinimg.com/474x/e7/c6/c9/e7c6c97f2f038f37eb1a5a771d9e3acb.jpg" alt="">
+              <div>
+                  <h5>MnMs</h5>
+                  <p>Crunchy, colorful, and irresistibly chocolatey—M&M’s bring pop of joy with every handful and makes your day joyful!</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup7">
+              <img src="https://i.pinimg.com/474x/3c/e1/f3/3ce1f3bf6c1d06ebb90c063ec77827a5.jpg" alt="">
+              <div>
+                  <h5>Milka</h5>
+                  <p>Soft, creamy, and wrapped in the signature purple charm.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup8">
+              <img src="https://i.pinimg.com/474x/ab/8c/7c/ab8c7c4072e820cfc526625bf879538f.jpg" alt="">
+              <div>
+                  <h5>Hershey’s</h5>
+                  <p>An American classic, Hershey’s chocolate delivers a rich and creamy taste in every bar.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup9">
+              <img src="https://i.pinimg.com/474x/00/e0/bb/00e0bb835f0ac0660842514dff7d0c60.jpg" alt="">
+              <div>
+                  <h5>Ferrero Rocher</h5>
+                  <p>A golden delight of crispy hazelnut, smooth chocolate offers an elegant and indulgent taste experience.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup10">
+              <img src="https://i.pinimg.com/474x/7a/54/d9/7a54d95a7011c7102946cacb93332c3d.jpg" alt="">
+              <div>
+                  <h5>Maltesers</h5>
+                  <p>Maltesers are the perfect bite-sized treat for a deliciously fun and airy chocolate experience.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup11">
+              <img src="https://i.pinimg.com/474x/4e/60/52/4e6052a32dcae0b6ac6a369f29040144.jpg" alt="">
+              <div>
+                  <h5>Galaxy</h5>
+                  <p>Silky smooth, irresistibly creamy—one bite of Galaxy Chocolate and you’re transported to a world of pure indulgence.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup12">
+              <img src="https://i.pinimg.com/474x/ac/35/90/ac35906de7031c30bc90bfb91a292d05.jpg" alt="">
+              <div>
+                  <h5>Lindt</h5>
+                  <p>From the first delicate snap to the last velvety melt, Lindt Chocolate is a masterpiece of Swiss.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup13">
+              <img src="https://i.pinimg.com/474x/2d/fc/6e/2dfc6e409b515eebe70f7549434c9217.jpg" alt="">
+              <div>
+                  <h5>Twix</h5>
+                  <p>Why choose between crispy, chewy, and chocolatey when you can have it all?</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup14">
+              <img src="https://i.pinimg.com/474x/da/a9/d1/daa9d125b300e8afe4d4775361b0a67e.jpg" alt="">
+              <div>
+                  <h5>Nutella</h5>
+                  <p>Smooth, creamy, and irresistibly delicious—Nutella turns every moment into a treat.</p>
+              </div>
+          </div>
+
+          <div class="sweet-item" data-popup="popup15">
+              <img src="https://i.pinimg.com/474x/a4/bb/ad/a4bbadd8a17745967f534c795705e21b.jpg" alt="">
+              <div>
+                  <h5>Raffaello</h5>
+                  <p>Crispy, creamy, and irresistibly delicate—Raffaello is more than just a confection.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="head text-center mb-4">About Sweet's & Bakers</h1>
+    
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                    <h3>Contact & Address</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:01234567899" class="text-white">01234567899</a></li>
+                        <li><a href="#" class="text-white">London Sweet's & Bakers Street, London, UK</a></li>
+                        <li>&copy; 2025 Sweet & Bakers. All rights reserved.</li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                    <h3>Support & Payment</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://support.example.com" class="text-white">Customer Support</a></li>
+                        <li><a href="https://chat.example.com" class="text-white">Live Chat</a></li>
+                        <li><a href="https://www.shippingeasy.com" class="text-white">Order Tracking</a></li>
+                        <li><a href="https://payments.example.com" class="text-white">Visa, PayPal</a></li>
+                        <li><a href="https://cod.example.com" class="text-white">Cash on Delivery</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                    <h3>Legal & Policy Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href=" https://www.privacypolicies.com" class="text-white">Privacy Policy</a></li>
+                        <li><a href="https://www.termsfeed.com/terms-conditions-generator/" class="text-white">Terms & Conditions</a></li>
+                        <li><a href=" https://www.returnpolicy.com/" class="text-white">Refund & Return Policy</a></li>
+                        <li><a href="https://www.cookiespolicy.com" class="text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 footer-col text-center">
+                    <h3>Follow Us</h3>
+                    <div class="social-links d-flex justify-content-center gap-3">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:waniakh20@gmail.com" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+          <!-- Popup -->
+
+          <div class="popup" id="popup1">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/736x/0b/19/36/0b193644b867d2d59ba5ca5e1f7734d5.jpg" alt="">
+                <h3>KitKat</h3>
+                <ul>
+                    <li><strong>Weight:</strong> 40g</li>
+                    <li><strong>Nutrition:</strong> 452 kcal</li>
+                    <li><strong>Ingredients:</strong> Sugar, Glucose Syrup, Skimmed Milk Powder, Cocoa Butter, Cocoa Mass</li>
+                </ul>
+                <button type="button" class="btn btn-outline-secondary add-to-cart">$5.00</button>
+            </div>
+        </div>
+
+            <div class="popup" id="popup2">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/7c/6a/66/7c6a663cccdbac55536d0c04ac9c7ad9.jpg" alt="">
+                <h3>Mars</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 51g</li>
+                  <li><strong>Nutrition:</strong> 452 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Glucose Syrup, Skimmed Milk Powder, Cocoa Butter, Cocoa Mass</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$4.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup3">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/a9/41/08/a94108adb5069087c6c258a0b93ebb24.jpg" alt="">
+                <h3>Snickers</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 50g</li>
+                  <li><strong>Nutrition:</strong> 488 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Peanuts, Glucose Syrup, Cocoa Butter, Cocoa Mass</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$6.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup4">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/1d/dd/4a/1ddd4a200c22ed4d61f5fafe87eff669.jpg" alt="">
+                <ul>
+                  <li><strong>Weight:</strong> 50g</li>
+                  <li><strong>Nutrition:</strong> 428 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Milk, Glucose Syrup, Cocoa Butter, Cocoa Mass</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$4.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup5">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/ba/8e/12/ba8e1222ebb4dd94fb2f1e44dcb22e72.jpg" alt="">
+                <h3>Kinder Bueno</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 43g</li>
+                  <li><strong>Nutrition:</strong> 240 kcal</li>
+                  <li><strong>Ingredients:</strong> Milk chocolate (contains sugar, cocoa butter)Hazelnuts Palm oil Wheat flour</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$7.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup6">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/e7/c6/c9/e7c6c97f2f038f37eb1a5a771d9e3acb.jpg" alt="">
+                <h3>MnMs</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 45g</li>
+                  <li><strong>Nutrition:</strong> 530 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Cocoa Butter, Cocoa Mass, Skimmed Milk Powder, Whey Powder</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$8.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup7">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/3c/e1/f3/3ce1f3bf6c1d06ebb90c063ec77827a5.jpg" alt="">
+                <h3>Milka</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 47.9g</li>
+                  <li><strong>Nutrition:</strong> 240 kcal</li>
+                  <li><strong>Ingredients:</strong> Milk chocolate (sugar, cocoa butter) Cornstarch Artificial colors </li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$5.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup8">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/ab/8c/7c/ab8c7c4072e820cfc526625bf879538f.jpg" alt="">
+                <h3>Hershey’s</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 43g</li>
+                  <li><strong>Nutrition:</strong> 546 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Milk, Chocolate, Cocoa Butter, Lactose, Lecithin</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$4.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup9">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/00/e0/bb/00e0bb835f0ac0660842514dff7d0c60.jpg" alt="">
+                <h3>Ferrero Rocher</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 43g</li>
+                  <li><strong>Nutrition:</strong> 546 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Milk, Chocolate, Cocoa Butter, Lactose, Lecithin</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$10.0</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup10">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/7a/54/d9/7a54d95a7011c7102946cacb93332c3d.jpg" alt="">
+                <h3>Maltesers</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 37g</li>
+                  <li><strong>Nutrition:</strong> 505 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Skimmed Milk Powder, Cocoa Butter, Cocoa Mass, Wheat Flour</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$8.00</button>
+              </div>
+            </div>
+
+            <div class="popup" id="popup11">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/4e/60/52/4e6052a32dcae0b6ac6a369f29040144.jpg" alt="">
+                <h3>Galaxy</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 43g</li>
+                  <li><strong>Nutrition:</strong> 561 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Milk, Chocolate, Cocoa Butter, Lactose, Lecithin</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$5.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup12">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/ac/35/90/ac35906de7031c30bc90bfb91a292d05.jpg" alt="">
+                <h3>Lindt</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 100g</li>
+                  <li><strong>Nutrition:</strong> 450 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Skimmed Milk Powder, Cocoa Butter, Cocoa Mass, Wheat Flour</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$7.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup13">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/2d/fc/6e/2dfc6e409b515eebe70f7549434c9217.jpg" alt="">
+                <h3>Twix</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 10g</li>
+                  <li><strong>Nutrition:</strong> 45 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Glucose Syrup, Skimmed Milk Powder, Cocoa Butter, Cocoa Mass</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$4.00</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup14">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/da/a9/d1/daa9d125b300e8afe4d4775361b0a67e.jpg" alt="">
+                <h3>Nutella</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 250g</li>
+                  <li><strong>Nutrition:</strong> 600 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Skimmed Milk Powder, Cocoa Butter, Cocoa Mass, Wheat Flour</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$15.0</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="popup" id="popup15">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="https://i.pinimg.com/474x/a4/bb/ad/a4bbadd8a17745967f534c795705e21b.jpg" alt="">
+                <h3>Raffaello</h3>
+                <ul>
+                  <li><strong>Weight:</strong> 10g</li>
+                  <li><strong>Nutrition:</strong> 250 kcal</li>
+                  <li><strong>Ingredients:</strong> Sugar, Skimmed Milk Powder, Coconut, Cocoa Butter, Cocoa Mass, Wheat Flour</li>
+                  <button type="button" class="btn btn-outline-secondary add-to-cart">$14.0</button>
+                </ul>
+              </div>
+            </div>
+
+   
+  <script>
+  
+  document.querySelectorAll('.sweet-item').forEach(function(item) {
+  item.onclick = function() {
+    let popupId = item.getAttribute('data-popup');
+    let popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'block';
+    }
+  };
+});
+
+document.querySelectorAll('.popup .close').forEach(function(button) {
+  button.onclick = function(event) {
+    let popup = event.target.closest('.popup');
+    popup.style.display = 'none';
+  };
+});
+
+window.onclick = function(event) {
+  document.querySelectorAll('.popup').forEach(function(popup) {
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+};
+document.querySelectorAll('.add-to-cart').forEach(function(button) {
+    button.onclick = function() {
+        alert("✅ Added to cart successfully!");
+    };
+});
+  </script>
+</body>
+</html>

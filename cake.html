@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products- Cake</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=
+    "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="cake.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8d7da;">
+    <div class="container-fluid d-flex justify-content-center">
+       <img src="logo.png" class="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sweets.html">Sweets</a></li>
+              <li><a class="dropdown-item" href="cake.html">Cakes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gift Hampers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="hamper1.html">Bakery</a></li>
+              <li><a class="dropdown-item" href="hamper2.html">Sweets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="about.html">About Us</a>
+          </li>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link active" href="contact.html">Contact Us</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.paul-uk.com/media/catalog/category/Cake_Jan_2025_banner.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8d7da; position: sticky; top: 0; z-index: 1000;">
+      <div class="container-fluid d-flex justify-content-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="#cakes">Cake</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link active" href="#mcake">Mini Cake</a>
+            </li>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#chcake">Cheese Cake</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#ccake">Cup Cake</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#donuts">Donuts</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#fcake">Fancy Cake</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+        <h1 class="text-center" id="cakes">Our Cake Collection 🎂</h1>  
+  <div class="container mt-4">
+      <div class="scrollable-list">
+          <div class="cake-item" data-popup="popup1">
+              <img src="https://i.pinimg.com/474x/a4/92/31/a492314a0488fa80257a0043b35961e7.jpg" alt="">
+              <div>
+                  <h5>Chocolate Delight 🍫🎂</h5>
+                  <p>Rich chocolate cake with creamy frosting.</p>
+              </div>
+          </div>
+          
+          <div class="cake-item" data-popup="popup2">
+              <img src="https://i.pinimg.com/474x/f5/8d/ac/f58dac1a552ed74582d4a26e6ec96df4.jpg" alt="">
+              <div>
+                  <h5>Red Velvet ❤️🎂</h5>
+                  <p>Soft red velvet layers with cheese frosting.</p>
+              </div>
+          </div>
+  
+          <div class="cake-item" data-popup="popup3">
+              <img src="https://i.pinimg.com/474x/0c/e5/93/0ce5931f1221e0f8eede61d017f41050.jpg" alt="">
+              <div>
+                  <h5>Vanilla Bliss  🍦🎂</h5>
+                  <p>Classic vanilla sponge with fresh cream.</p>
+              </div>
+          </div>
+  
+          <div class="cake-item" data-popup="popup4">
+              <img src="https://i.pinimg.com/474x/f4/34/64/f434648d3d8870d56607e1563c10feb3.jpg" alt="">
+              <div>
+                  <h5>Strawberry Fantasy 🍓🎂</h5>
+                  <p>Fresh strawberries & whipped cream.</p>
+              </div>
+          </div>
+  
+          <div class="cake-item" data-popup="popup5">
+              <img src="https://i.pinimg.com/474x/6f/bf/d4/6fbfd4d0d4ec8ad103820cb6912fdf47.jpg" alt="">
+              <div>
+                  <h5>Black Forest 🍒🎂</h5>
+                  <p>Layers of chocolate, cream & cherries.</p>
+              </div>
+          </div>
+  
+          <div class="cake-item" data-popup="popup6">
+              <img src="https://i.pinimg.com/474x/e0/c4/22/e0c4222086778e138ada9538c14ecf6a.jpg" alt="">
+              <div>
+                  <h5>Caramel Crunch 🍯🎂</h5>
+                  <p>Vanilla sponge along with caramel sauce.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="text-center" id="mcake">Our Mini Cake Collection 🎂</h1>
+  <div class="container mt-4">
+    <div class="scrollable-list">
+      <div class="cake-item" data-popup="popup7">
+        <img src="https://i.pinimg.com/474x/9e/00/63/9e0063d9a22c342a2e09b4845aa5c3f4.jpg" alt="">
+        <div>
+            <h5>Mini Chocolate Cake</h5>
+            <p>A rich, moist chocolate sponge layered with creamy ganache.</p>
+        </div>
+    </div>
+
+    <div class="cake-item" data-popup="popup8">
+      <img src="https://i.pinimg.com/474x/f4/32/d3/f432d31f8c9f1fbe4c6f6c49b96b5ff6.jpg" alt="">
+      <div>
+          <h5>Mini Vanilla Cake</h5>
+          <p>A soft, fluffy vanilla sponge layered with smooth vanilla cream.</p>
+      </div>
+  </div>
+
+  <div class="cake-item" data-popup="popup9">
+    <img src="https://i.pinimg.com/474x/54/16/8f/54168f6bf33239d6cc20d78e0c1b471b.jpg" alt="">
+    <div>
+        <h5>Mini Strawberry Cake</h5>
+        <p>A soft, fluffy vanilla sponge layered with fresh strawberry.</p>
+    </div>
+</div>
+</div>
+</div>
+
+      <h1 class="text-center" id="chcake">Our Cheese Cake Collection 🍰</h1>  
+      <div class="container mt-4">
+        <div class="scrollable-list">
+
+          <div class="cake-item" data-popup="popup10">
+            <img src="https://i.pinimg.com/474x/d4/40/2f/d4402fe086daabdb99e8df06ed46c8a8.jpg" alt="">
+            <div>
+                <h5>Lotus Cheesecake 🍪🍰</h5>
+                <p>A rich and creamy cheesecake with a buttery Lotus Biscoff</p>
+            </div>
+        </div>
+        
+        <div class="cake-item" data-popup="popup11">
+          <img src="https://i.pinimg.com/474x/28/71/c1/2871c135d6f0dd51009787fb7f6a09e4.jpg" alt="">
+          <div>
+              <h5>Blueberry Cheesecake 🫐🍰</h5>
+              <p>Smooth cheesecake filling, and a luscious blueberry topping. </p>
+          </div>
+      </div>
+
+      <div class="cake-item" data-popup="popup12">
+        <img src="https://i.pinimg.com/474x/e7/30/ba/e730ba29f408caecec5f89561d887194.jpg" alt="">
+        <div>
+            <h5>Strawberry Cheesecake 🍓🍰</h5>
+            <p>Velvety cream cheese filling, and topped with luscious strawberry sauce</p>
+        </div>
+    </div>  
+
+    <div class="cake-item" data-popup="popup13">
+      <img src="https://i.pinimg.com/474x/0b/cb/72/0bcb72aa834309055e9b4991201788b4.jpg" alt="">
+      <div>
+          <h5>Chocolate Cheesecake 🍫🍰</h5>
+          <p>Chocolate-infused cheesecake filling topped with velvety chocolate ganache.</p>
+      </div>
+  </div>
+        </div>
+        </div>
+
+        <h1 class="text-center" id="ccake">Our Cup Cake Collection 🧁</h1>
+        
+        <div class="container mt-4">
+          <div class="scrollable-list">
+            <div class="cake-item" data-popup="popup14">
+              <img src="https://i.pinimg.com/474x/04/0a/23/040a237b55a776b9248e1b243a974368.jpg" alt="">
+              <div>
+                  <h5>Chocolate Cupcake</h5>
+                  <p>Decadent cocoa, topped with silky smooth chocolate frosting.</p>
+              </div>
+          </div>
+
+            <div class="cake-item" data-popup="popup15">
+             <img src="https://i.pinimg.com/474x/b0/72/9d/b0729da6fdcc8312adc34e1487937cf3.jpg" alt="">
+             <div>
+                <h5>Red Velvet Cupcake</h5>
+                <p>Rich cocoa-infused cake with a hint of vanilla, topped with smooth cream cheese.</p>
+            </div>
+        </div>
+
+        <div class="cake-item" data-popup="popup16">
+          <img src="https://i.pinimg.com/474x/b4/dd/90/b4dd90adc811e0487e0e91970e0b0e78.jpg" alt="">
+          <div>
+              <h5>Coffee Cupcake</h5>
+              <p>Perfect treat for coffee lovers, topped with creamy coffee frosting.</p>
+          </div>
+        </div>
+
+        <div class="cake-item" data-popup="popup17">
+          <img src="https://i.pinimg.com/474x/3a/e0/c2/3ae0c223073a2e40f5c99962b9ea1ad5.jpg" alt="">
+          <div>
+              <h5>Cookies n Cream Cupcake</h5>
+              <p>Moist chocolate base, loaded with crushed cookies and topped with a luscious cookies.</p>
+          </div>
+      </div>
+
+      <div class="cake-item" data-popup="popup18">
+        <img src="https://i.pinimg.com/474x/b9/4c/41/b94c4162af8022bf05f413da20f97474.jpg" alt="">
+        <div>
+            <h5>Strawberry Cupcake</h5>
+            <p>Made with real strawberries and topped with smooth, creamy strawberry frosting.</p>
+        </div>
+    </div>
+          </div>
+        </div>
+
+        <h1 class="text-center" id="donuts">Our Donut Collection 🍩</h1> 
+        <div class="container mt-4">
+          <div class="scrollable-list">
+            <div class="cake-item" data-popup="popup19">
+              <img src="https://i.pinimg.com/474x/a2/e6/05/a2e605badc591024f2c9255ed6af1f9a.jpg" alt="">
+              <div>
+                  <h5>Chocolate Donut</h5>
+                  <p>Perfect blend of sweetness and indulgence, whether glazed.</p>
+              </div>
+          </div>
+
+          <div class="cake-item" data-popup="popup20">
+            <img src="https://i.pinimg.com/474x/60/ec/ca/60ecca65e8238bd5d9bc084173d4b852.jpg" alt="">
+            <div>
+                <h5>Pink Glazed Donut</h5>
+                <p>Coated in luscious strawberry glaze or topped with creamy frosting.</p>
+            </div>
+        </div>
+
+        <div class="cake-item" data-popup="popup21">
+          <img src="https://i.pinimg.com/474x/d5/d1/e7/d5d1e7022ce68ad7dbbfb7c8e76d3b52.jpg" alt="">
+          <div>
+              <h5>White Glazed Donut</h5>
+              <p>Soft, fluffy, and perfectly coated in a smooth, sweet vanilla glaze!</p>
+          </div>
+      </div>
+
+      <div class="cake-item" data-popup="popup22">
+        <img src="https://i.pinimg.com/474x/21/b3/34/21b334c0907214d2bb3b9cb2181652ee.jpg" alt="">
+        <div>
+            <h5>Blue Glazed Donut</h5>
+            <p>Soft, fluffy, and topped with a vibrant blue glaze!</p>
+        </div>
+    </div>
+
+    <div class="cake-item" data-popup="popup23">
+      <img src="https://i.pinimg.com/474x/df/d0/a5/dfd0a565478d7f0760c6f6c599aa3fb8.jpg" alt="">
+      <div>
+          <h5>Glazed Donut</h5>
+          <p>Soft, fluffy, and coated in a perfectly sweet, shiny glaze!</p>
+      </div>
+  </div>
+          </div>
+        </div>
+
+        <h1 class="text-center" id="fcake">Our Fancy Cake Collection 🎂</h1>
+        <h2 class="text-center">Coming Soon</h2>
+        <div class="container mt-4">
+          <div class="scrollable-list">
+            <div class="cake-item" data-popup="popup24">
+              <img src="https://i.pinimg.com/474x/59/66/20/5966204a9369bdf78f8360b0e5e40ab1.jpg" alt="">
+              <div>
+                  <h5>Lavender Love</h5>
+                  <p>Experience the magic of royal purples, velvety textures, and exquisite flavors in every bite.</p>
+              </div>
+          </div>
+      
+          <div class="cake-item" data-popup="popup25">
+            <img src="https://i.pinimg.com/474x/65/dd/70/65dd709d8c202a7d9af1f9f2a9332ca3.jpg" alt="">
+            <div>
+                <h5>Pretty in Pink</h5>
+                <p>Step into a world of delicate beauty and irresistible flavor with our handcrafted pink cakes.</p>
+            </div>
+        </div>
+      
+        <div class="cake-item" data-popup="popup26">
+          <img src="https://i.pinimg.com/474x/2c/ef/4b/2cef4b0f879aefdc8aefdd96fd4714f3.jpg" alt="">
+          <div>
+              <h5>Macaron Bliss</h5>
+              <p>Indulge in the luxury of fine French baking with our exquisite Macaron Cakes!</p>
+          </div>
+      </div>
+      
+      <div class="cake-item" data-popup="popup27">
+        <img src="https://i.pinimg.com/474x/78/80/75/78807522664f26f7899deec8076ca6f5.jpg" alt="">
+        <div>
+            <h5>Icy Perfection</h5>
+            <p>ndulge in the beauty of our stunning blue-themed cakes, where flavor meets elegance in every bite.</p>
+        </div>
+      </div>
+          </div>
+        </div>
+  
+        <footer class="footer bg-dark text-white py-4">
+            <div class="container">
+                <h1 class="head text-center mb-4">About Sweet's & Bakers</h1>
+        
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                        <h3>Contact & Address</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:01234567899" class="text-white">01234567899</a></li>
+                            <li><a href="#" class="text-white">London Sweet's & Bakers Street, London, UK</a></li>
+                            <li>&copy; 2025 Sweet & Bakers. All rights reserved.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                        <h3>Support & Payment</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="https://support.example.com" class="text-white">Customer Support</a></li>
+                            <li><a href="https://chat.example.com" class="text-white">Live Chat</a></li>
+                            <li><a href="https://www.shippingeasy.com" class="text-white">Order Tracking</a></li>
+                            <li><a href="https://payments.example.com" class="text-white">Visa, PayPal</a></li>
+                            <li><a href="https://cod.example.com" class="text-white">Cash on Delivery</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                        <h3>Legal & Policy Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href=" https://www.privacypolicies.com" class="text-white">Privacy Policy</a></li>
+                            <li><a href="https://www.termsfeed.com/terms-conditions-generator/" class="text-white">Terms & Conditions</a></li>
+                            <li><a href=" https://www.returnpolicy.com/" class="text-white">Refund & Return Policy</a></li>
+                            <li><a href="https://www.cookiespolicy.com" class="text-white">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-12 col-sm-6 col-lg-3 footer-col text-center">
+                        <h3>Follow Us</h3>
+                        <div class="social-links d-flex justify-content-center gap-3">
+                            <a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:waniakh20@gmail.com" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+           <!-- Popup -->
+        <!-- Cakes -->
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/a4/92/31/a492314a0488fa80257a0043b35961e7.jpg" alt="">
+      <h3>Chocolate Delight</h3>
+      <p>Rich chocolate cake with creamy frosting.</p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$20</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/f5/8d/ac/f58dac1a552ed74582d4a26e6ec96df4.jpg" alt="">
+      <h3>Red Velvet</h3>
+      <p>Soft red velvet layers with cheese frosting.</p>
+      <p><strong>Weight:</strong> 1.5 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$18</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/0c/e5/93/0ce5931f1221e0f8eede61d017f41050.jpg" alt="">
+      <h3>Vanilla Bliss</h3>
+      <p>Classic vanilla sponge with fresh cream.</p>
+      <p><strong>Weight:</strong> 1.5 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$15</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup4">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/f4/34/64/f434648d3d8870d56607e1563c10feb3.jpg" alt="">
+      <h3>Strawberry Fantasy</h3>
+      <p>Fresh strawberries & whipped cream.</p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$22</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup5">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/6f/bf/d4/6fbfd4d0d4ec8ad103820cb6912fdf47.jpg" alt="">
+      <h3>Black Forest</h3>
+      <p>Layers of chocolate, cream & cherries.</p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$18</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup6">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/e0/c4/22/e0c4222086778e138ada9538c14ecf6a.jpg" alt="">
+      <h3>Caramel Crunch</h3>
+      <p>Vanilla sponge along with caramel sauce.</p>
+      <p><strong>Weight:</strong> 1.5 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$22</button>
+    </div>
+  </div>
+
+      <!-- Mini Cake -->
+  <div class="popup" id="popup7">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/9e/00/63/9e0063d9a22c342a2e09b4845aa5c3f4.jpg" alt="">
+      <h3>Mini Chocolate Cake</h3>
+      <p>A rich, moist chocolate sponge layered with creamy ganache</p>
+      <p><strong>Weight:</strong> 0.5 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$14</button>
+    </div>
+  </div> 
+  
+  <div class="popup" id="popup8">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/f4/32/d3/f432d31f8c9f1fbe4c6f6c49b96b5ff6.jpg" alt="">
+      <h3>Mini Vanilla Cake</h3>
+      <p>A soft, fluffy vanilla sponge layered with smooth vanilla cream</p>
+      <p><strong>Weight:</strong> 0.5 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$14</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup9">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/54/16/8f/54168f6bf33239d6cc20d78e0c1b471b.jpg" alt="">
+      <h3>Mini Strawberry Cake</h3>
+      <p>A soft, fluffy vanilla sponge layered with fresh strawberry.</p>
+      <p><strong>Weight:</strong> 0.5 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$15</button>
+    </div>
+  </div> 
+
+        <!-- Cheese Cake -->
+  <div class="popup" id="popup10">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/d4/40/2f/d4402fe086daabdb99e8df06ed46c8a8.jpg" alt="">
+      <h3>Lotus Cheese Cake</h3>
+      <p>A rich and creamy cheesecake with a buttery Lotus Biscoff</p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$28</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup11">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/28/71/c1/2871c135d6f0dd51009787fb7f6a09e4.jpg" alt="">
+      <h3>Blueberry Cheese Cake</h3>
+      <p>Smooth cheesecake filling, and a luscious blueberry topping. </p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$26</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup12">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/e7/30/ba/e730ba29f408caecec5f89561d887194.jpg" alt="">
+      <h3>Strawberry Cheese Cake</h3>
+      <p>Velvety cream cheese filling, and topped with luscious strawberry sauce.</p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$26</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup13">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/0b/cb/72/0bcb72aa834309055e9b4991201788b4.jpg" alt="">
+      <h3>Chocolate Cheesecake</h3>
+      <p>Chocolate-infused cheesecake filling topped with velvety chocolate ganache.</p>
+      <p><strong>Weight:</strong> 2 lbs</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$27</button>
+    </div>
+  </div> 
+
+       <!-- Cupcake     -->
+  <div class="popup" id="popup14">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/04/0a/23/040a237b55a776b9248e1b243a974368.jpg" alt="">
+      <h3>Chocolate Cupcake</h3>
+      <p>Decadent cocoa, topped with silky smooth chocolate frosting.</p>
+      <p><strong>Weight:</strong> 68 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$10</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup15">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/b0/72/9d/b0729da6fdcc8312adc34e1487937cf3.jpg" alt="">
+      <h3>Red Velvet Cupcake</h3>
+      <p>Rich cocoa-infused cake with a hint of vanilla, topped with smooth cream cheese.</p>
+      <p><strong>Weight:</strong> 70 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$10.5</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup16">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/b4/dd/90/b4dd90adc811e0487e0e91970e0b0e78.jpg" alt="">
+      <h3>Coffee Cupcake</h3>
+      <p>Perfect treat for coffee lovers, topped with creamy coffee frosting.</p>
+      <p><strong>Weight:</strong> 68 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$12</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup17">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/3a/e0/c2/3ae0c223073a2e40f5c99962b9ea1ad5.jpg" alt="">
+      <h3>Cookies n Cream</h3>
+      <p>Moist chocolate base, loaded with crushed cookies and topped with a luscious cookies.</p>
+      <p><strong>Weight:</strong> 71 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$11</button>
+    </div>
+  </div> 
+
+  <div class="popup" id="popup18">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/b9/4c/41/b94c4162af8022bf05f413da20f97474.jpg" alt="">
+      <h3>Strawberry Cupcake</h3>
+      <p>Made with real strawberries and topped with smooth, creamy strawberry frosting.</p>
+      <p><strong>Weight:</strong> 72 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$9</button>
+    </div>
+  </div>
+
+       <!-- Donuts -->
+  <div class="popup" id="popup19">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/a2/e6/05/a2e605badc591024f2c9255ed6af1f9a.jpg" alt="">
+      <h3>Chocolate Donut</h3>
+      <p>Perfect blend of sweetness and indulgence, whether glazed, frosted.</p>
+      <p><strong>Weight:</strong> 43 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$10</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup20">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/60/ec/ca/60ecca65e8238bd5d9bc084173d4b852.jpg" alt="">
+      <h3>Strawberry Glazed Donut</h3>
+      <p>Coated in luscious strawberry glaze or topped with creamy frosting.</p>
+      <p><strong>Weight:</strong> 43 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$10</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup21">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/d5/d1/e7/d5d1e7022ce68ad7dbbfb7c8e76d3b52.jpg" alt="">
+      <h3>White Glazed Donut</h3>
+      <p>Soft, fluffy, and perfectly coated in a smooth, sweet vanilla glaze!</p>
+      <p><strong>Weight:</strong> 43 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$12</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup22">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/21/b3/34/21b334c0907214d2bb3b9cb2181652ee.jpg" alt="">
+      <h3>Blue Glazed Donut</h3>
+      <p>Soft, fluffy, and topped with a vibrant blue glaze!</p>
+      <p><strong>Weight:</strong> 43 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$11</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup23">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img src="https://i.pinimg.com/474x/df/d0/a5/dfd0a565478d7f0760c6f6c599aa3fb8.jpg" alt="">
+      <h3>Glazed Donut</h3>
+      <p>Soft, fluffy, and coated in a perfectly sweet, shiny glaze!</p>
+      <p><strong>Weight:</strong> 43 g</p>
+      <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$9</button>
+    </div>
+  </div>
+      
+          <!-- Fancy Cakes -->
+          <div class="popup" id="popup24">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <img src="https://i.pinimg.com/474x/59/66/20/5966204a9369bdf78f8360b0e5e40ab1.jpg" alt="">
+              <h3>Purple Theme Cake</h3>
+              <p>Experience the magic of royal purples, velvety textures, and exquisite flavors in every bite.</p>
+              <p><strong>Weight:</strong> 3 lbs</p>
+              <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$30</button>
+            </div>
+          </div>
+
+          <div class="popup" id="popup25">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <img src="https://i.pinimg.com/474x/65/dd/70/65dd709d8c202a7d9af1f9f2a9332ca3.jpg" alt="">
+              <h3>Pretty in Pink</h3>
+              <p>Step into a world of delicate beauty and irresistible flavor with our handcrafted pink cakes.</p>
+              <p><strong>Weight:</strong> 3 lbs</p>
+              <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$30</button>
+            </div>
+          </div>
+
+          <div class="popup" id="popup26">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <img src="https://i.pinimg.com/474x/2c/ef/4b/2cef4b0f879aefdc8aefdd96fd4714f3.jpg" alt="">
+              <h3>Macaron Bliss</h3>
+              <p>Indulge in the luxury of fine French baking with our exquisite Macaron Cakes!</p>
+              <p><strong>Weight:</strong> 4 lbs</p>
+              <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$35</button>
+            </div>
+          </div>
+
+          <div class="popup" id="popup27">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <img src="https://i.pinimg.com/474x/78/80/75/78807522664f26f7899deec8076ca6f5.jpg" alt="">
+              <h3>Icy Perfection</h3>
+              <p>ndulge in the beauty of our stunning blue-themed cakes, where flavor meets elegance in every bite.</p>
+              <p><strong>Weight:</strong> 3 lbs</p>
+              <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$30</button>
+            </div>
+          </div>
+          
+    <script>
+
+    document.querySelectorAll('.cake-item').forEach(function(item) {
+  item.onclick = function() {
+    let popupId = item.getAttribute('data-popup');
+    let popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'block';
+    }
+  };
+});
+
+document.querySelectorAll('.popup .close').forEach(function(button) {
+  button.onclick = function(event) {
+    let popup = event.target.closest('.popup');
+    popup.style.display = 'none';
+  };
+});
+
+window.onclick = function(event) {
+  document.querySelectorAll('.popup').forEach(function(popup) {
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+};
+document.querySelectorAll('.add-to-cart').forEach(function(button) {
+    button.onclick = function() {
+        alert("✅ Added to cart successfully!");
+    };
+})
+
+  </script>
+</body>
+</html>

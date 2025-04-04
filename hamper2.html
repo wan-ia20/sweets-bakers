@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift- Sweets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=
+    "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+h1{
+  padding: 20px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  position: sticky;
+  font-weight: bold;
+}
+.logo {
+    width: 60px;
+       height: auto;
+  }
+  a:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+.head {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+        color: white; 
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    h2{
+      text-align: center;
+    }
+a{
+    text-decoration: none;
+}
+.footer {
+    background: black;
+}
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+.footer .social-links a {
+    font-size: 18px;
+    padding: 8px;
+    background: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.footer .social-links a:hover {
+    background: #555;
+}
+.carousel {
+  width: 90%; 
+  max-width: 1000px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  display: block;
+  border-radius: 10px; 
+}
+@media (max-width: 1024px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.gift-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.gift-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.popup {
+  display: none; 
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 2px solid #f8d7da;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  position: relative;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-content img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 15px;
+  display: block;
+}
+</style>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8d7da; position: sticky; top: 0; z-index: 1000;">
+    <div class="container-fluid d-flex justify-content-center">
+       <img src="logo.png" class="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sweets.html">Sweets</a></li>
+              <li><a class="dropdown-item" href="cake.html">Cakes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gift Hampers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="hamper1.html">Bakery</a></li>
+              <li><a class="dropdown-item" href="hamper2.html">Sweets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="about.html">About Us</a>
+          </li>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link active" href="contact.html">Contact Us</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carousel">
+    <div class="carousel-container">
+        <img src="https://i.pinimg.com/474x/aa/7f/7f/aa7f7f547455db703e0c78fec9a3ab71.jpg" alt="">
+    </div>
+    <div class="carousel-container">
+        <img src="https://i.pinimg.com/236x/1b/63/41/1b63414af78e626ca197d790604578a8.jpg" alt="">
+    </div>
+    <div class="carousel-container">
+        <img src="https://i.pinimg.com/236x/f4/98/45/f498459c8b05560d901701905b892829.jpg" alt="">
+    </div>
+</div>
+
+    <div class="container mt-4">
+        <div class="scrollable-list">
+            <div class="gift-item" data-popup="popup1">
+                <img src="https://i.pinimg.com/736x/d0/e2/79/d0e2799681facfd02a5233346dd25c47.jpg" alt="">
+                <div>
+                    <h5>Chocolate Hamper</h5>
+                    <p>Crispy wafer, smooth chocolate—pure delight in every bite.</p>
+                </div>
+            </div>
+            
+            <div class="gift-item" data-popup="popup2">
+                <img src="https://i.pinimg.com/736x/f6/74/0c/f6740c6225a87a103cff2f1fe08825e6.jpg" alt="">
+                <div>
+                    <h5>A Bite of Happiness</h5>
+                    <p>Finest cocoa and smooth, creamy texture richness of pure milk.</p>
+                </div>
+            </div>
+    
+            <div class="gift-item" data-popup="popup3">
+                <img src="https://i.pinimg.com/736x/86/8f/61/868f61673cfe76bb46fca948c9acc53a.jpg" alt="">
+                <div>
+                    <h5>Milky Way Bouquet</h5>
+                    <p>Soft nougat, creamy caramel, and rich milk chocolate.</p>
+                </div>
+            </div>
+    
+            <div class="gift-item" data-popup="popup4">
+                <img src="https://i.pinimg.com/736x/23/1b/f4/231bf462ce6212c46c22f6be44af5d02.jpg" alt="">
+                <div>
+                    <h5>Assortment Sweets</h5>
+                    <p>Smooth milk chocolate with crunchy almonds.</p>
+                </div>
+            </div>
+    
+            <div class="gift-item" data-popup="popup5">
+                <img src="https://i.pinimg.com/736x/45/33/af/4533af0a86ea8dbf6b659e1f932969c9.jpg" alt="">
+                <div>
+                    <h5>Milka Bars</h5>
+                    <p>Soft, smooth, and creamiest chocolate…".</p>
+                </div>
+            </div>
+    
+            <div class="gift-item" data-popup="popup6">
+                <img src="https://i.pinimg.com/736x/f9/a9/c6/f9a9c6a6971aae3b871931ff156db0f0.jpg" alt="">
+                <div>
+                    <h5>Ferrero Rocher</h5>
+                    <p>The crisp hazelnut coating cracks open, revealing velvety chocolate and a whole hazelnut inside.</p>
+                </div>
+            </div>
+            <div class="gift-item" data-popup="popup7">
+                <img src="https://www.allcelebrationgifts.com/cdn/shop/files/IMG-6102_370x.jpg?v=1729377471" alt="">
+                <div>
+                    <h5>Sweets Moments</h5>
+                    <p>A smooth chocolate bar is unwrapped, revealing crispy layers and creamy filling.</p>
+                </div>
+            </div>
+
+            <div class="gift-item" data-popup="popup8">
+                <img src="https://i.pinimg.com/736x/9b/8c/83/9b8c83e6fd7225635f3fe859d6132c77.jpg" alt="">
+                <div>
+                    <h5>Snickers Delight</h5>
+                    <p>Rich caramel, nougat, and crunchy peanuts covered in chocolate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="head text-center mb-4">About Sweet's & Bakers</h1>
+    
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                    <h3>Contact & Address</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:01234567899" class="text-white">01234567899</a></li>
+                        <li><a href="#" class="text-white">London Sweet's & Bakers Street, London, UK</a></li>
+                        <li>&copy; 2025 Sweet & Bakers. All rights reserved.</li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                    <h3>Support & Payment</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://support.example.com" class="text-white">Customer Support</a></li>
+                        <li><a href="https://chat.example.com" class="text-white">Live Chat</a></li>
+                        <li><a href="https://www.shippingeasy.com" class="text-white">Order Tracking</a></li>
+                        <li><a href="https://payments.example.com" class="text-white">Visa, PayPal</a></li>
+                        <li><a href="https://cod.example.com" class="text-white">Cash on Delivery</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                    <h3>Legal & Policy Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href=" https://www.privacypolicies.com" class="text-white">Privacy Policy</a></li>
+                        <li><a href="https://www.termsfeed.com/terms-conditions-generator/" class="text-white">Terms & Conditions</a></li>
+                        <li><a href=" https://www.returnpolicy.com/" class="text-white">Refund & Return Policy</a></li>
+                        <li><a href="https://www.cookiespolicy.com" class="text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 footer-col text-center">
+                    <h3>Follow Us</h3>
+                    <div class="social-links d-flex justify-content-center gap-3">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:waniakh20@gmail.com" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/d0/e2/79/d0e2799681facfd02a5233346dd25c47.jpg" alt="">
+          <h3>Chocolate Hamper</h3>
+          <p>Crispy wafer, smooth chocolate—pure delight in every bite.</p>
+          <p><strong>Weight:23g</strong> </p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$2.0</button>
+        </div>
+      </div>
+
+      <div class="popup" id="popup2">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/f6/74/0c/f6740c6225a87a103cff2f1fe08825e6.jpg" alt="">
+          <h3>A Bite of Happiness</h3>
+          <p>Finest cocoa and smooth, creamy texture richness of pure milk.</p>
+          <p><strong>Weight:30g</strong> </p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$4.5</button>
+        </div>
+      </div>
+
+      <div class="popup" id="popup3">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/86/8f/61/868f61673cfe76bb46fca948c9acc53a.jpg" alt="">
+          <h3>Milky Way Bouquet</h3>
+          <p>Soft nougat, creamy caramel, and rich milk chocolate.</p>
+          <p><strong>Weight:32g</strong> </p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$4.0</button>
+        </div>
+      </div>
+      <div class="popup" id="popup4">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/23/1b/f4/231bf462ce6212c46c22f6be44af5d02.jpg" alt="">
+          <h3>Assortment Sweets</h3>
+          <p>Smooth milk chocolate with crunchy almonds.</p>
+          <p><strong>Weight:40g</strong> </p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$5.5</button>
+        </div>
+      </div>
+
+      <div class="popup" id="popup5">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/45/33/af/4533af0a86ea8dbf6b659e1f932969c9.jpg" alt="">
+          <h3>Milka Bars</h3>
+          <p>Soft, smooth, and creamiest chocolate…".</p>
+          <p><strong>Weight:25g</strong> </p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$3.0</button>
+        </div>
+      </div>
+      <div class="popup" id="popup6">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/f9/a9/c6/f9a9c6a6971aae3b871931ff156db0f0.jpg" alt="">
+          <h3>Ferrero Rocher</h3>
+          <p>The crisp hazelnut coating cracks open, revealing velvety chocolate and a whole hazelnut inside.</p>
+          <p><strong>Weight:45g</strong> </p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$8.0</button>
+        </div>
+      </div>
+
+      <div class="popup" id="popup7">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://www.allcelebrationgifts.com/cdn/shop/files/IMG-6102_370x.jpg?v=1729377471" alt="">
+          <h3>Sweets Moments</h3>
+          <p>A smooth chocolate bar is unwrapped, revealing crispy layers and creamy filling.</p>
+          <p><strong>Weight:47g</strong></p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$6.5</button>
+        </div>
+      </div>
+
+      <div class="popup" id="popup8">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <img src="https://i.pinimg.com/736x/9b/8c/83/9b8c83e6fd7225635f3fe859d6132c77.jpg" alt="">
+          <h3>Snickers Delight</h3>
+          <p>Rich caramel, nougat, and crunchy peanuts covered in chocolate.</p>
+          <p><strong>Weight:</strong>50g</p>
+          <button type="button" class="btn btn-outline-secondary w-25 add-to-cart">$7.0</button>
+        </div>
+      </div>
+
+      <script>
+
+        document.querySelectorAll('.gift-item').forEach(function(item) {
+      item.onclick = function() {
+        let popupId = item.getAttribute('data-popup');
+        let popup = document.getElementById(popupId);
+        if (popup) {
+          popup.style.display = 'block';
+        }
+      };
+    });
+    
+    document.querySelectorAll('.popup .close').forEach(function(button) {
+      button.onclick = function(event) {
+        let popup = event.target.closest('.popup');
+        popup.style.display = 'none';
+      };
+    });
+    
+    window.onclick = function(event) {
+      document.querySelectorAll('.popup').forEach(function(popup) {
+        if (event.target === popup) {
+          popup.style.display = 'none';
+        }
+      });
+    };
+document.querySelectorAll('.add-to-cart').forEach(function(button) {
+    button.onclick = function() {
+        alert("✅ Added to cart successfully!");
+    };
+})
+ </script>
+
+</body>
+</html>

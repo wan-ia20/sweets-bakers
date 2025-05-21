@@ -58,6 +58,32 @@ body {
   height: 120px;
   object-fit: cover;
 }
+.footer {
+  background: black;
+}
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer .social-links a {
+  font-size: 18px;
+  padding: 8px;
+  background: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.footer .social-links a:hover {
+  background: #555;
+}
     </style>
   </head>
   <body>
@@ -170,6 +196,55 @@ body {
         <a href="contact.html" class="btn btn-outline-danger">Contact Us</a>
       </div>
     </section>
+
+      <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <h1 class="head text-center mb-4">About Sweet's & Bakers</h1>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                <h3>Contact & Address</h3>
+                <ul class="list-unstyled">
+                    <li><a href="tel:01234567899" class="text-white">01234567899</a></li>
+                    <li><a href="#" class="text-white">London Sweet's & Bakers Street, London, UK</a></li>
+                    <li>&copy; 2025 Sweet & Bakers. All rights reserved.</li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                <h3>Support & Payment</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://support.example.com" class="text-white">Customer Support</a></li>
+                    <li><a href="https://chat.example.com" class="text-white">Live Chat</a></li>
+                    <li><a href="https://www.shippingeasy.com" class="text-white">Order Tracking</a></li>
+                    <li><a href="https://payments.example.com" class="text-white">Visa, PayPal</a></li>
+                    <li><a href="https://cod.example.com" class="text-white">Cash on Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 footer-col mb-4">
+                <h3>Legal & Policy Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href=" https://www.privacypolicies.com" class="text-white">Privacy Policy</a></li>
+                    <li><a href="https://www.termsfeed.com/terms-conditions-generator/" class="text-white">Terms & Conditions</a></li>
+                    <li><a href=" https://www.returnpolicy.com/" class="text-white">Refund & Return Policy</a></li>
+                    <li><a href="https://www.cookiespolicy.com" class="text-white">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 footer-col text-center">
+                <h3>Follow Us</h3>
+                <div class="social-links d-flex justify-content-center gap-3">
+                    <a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:waniakh20@gmail.com" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
